@@ -1,0 +1,621 @@
+[
+    {
+        "id": "99ef54bf.e4e7b8",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "d5a31cbe.4ba7e",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "d8484d88.60c0b",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "7ac7e0a3.b5b36",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Prediction",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d4c57ed6.2cf01",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "c904f915.dff018",
+        "type": "ui_group",
+        "z": "",
+        "name": "Enter the values",
+        "tab": "7ac7e0a3.b5b36",
+        "order": 1,
+        "disp": true,
+        "width": 11,
+        "collapse": false
+    },
+    {
+        "id": "b1b11140.4e4ef",
+        "type": "inject",
+        "z": "99ef54bf.e4e7b8",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "Hello Node-RED!",
+        "payloadType": "string",
+        "x": 141,
+        "y": 61,
+        "wires": [
+            [
+                "f2f2649a.0d0d98"
+            ]
+        ]
+    },
+    {
+        "id": "f2f2649a.0d0d98",
+        "type": "debug",
+        "z": "99ef54bf.e4e7b8",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 401,
+        "y": 87,
+        "wires": []
+    },
+    {
+        "id": "2e80c577.137bea",
+        "type": "ui_form",
+        "z": "d5a31cbe.4ba7e",
+        "name": "",
+        "label": "",
+        "group": "c904f915.dff018",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Age",
+                "value": "a",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Children",
+                "value": "c",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "BMI",
+                "value": "b",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "a": "",
+            "c": "",
+            "b": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "",
+        "x": 50,
+        "y": 120,
+        "wires": [
+            [
+                "ae0c0868.03e568"
+            ]
+        ]
+    },
+    {
+        "id": "f3a24d6c.85a0d",
+        "type": "ui_dropdown",
+        "z": "d5a31cbe.4ba7e",
+        "name": "",
+        "label": "Gender",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "c904f915.dff018",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Female",
+                "value": "female",
+                "type": "str"
+            },
+            {
+                "label": "Male",
+                "value": "male",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "",
+        "x": 80,
+        "y": 200,
+        "wires": [
+            [
+                "25d635b7.60f72a"
+            ]
+        ]
+    },
+    {
+        "id": "5b770323.2d0c0c",
+        "type": "ui_dropdown",
+        "z": "d5a31cbe.4ba7e",
+        "name": "",
+        "label": " smoker",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "c904f915.dff018",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "YES",
+                "value": "Yes",
+                "type": "str"
+            },
+            {
+                "label": "NO",
+                "value": "No",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "",
+        "x": 80,
+        "y": 260,
+        "wires": [
+            [
+                "c8a30def.5a2ab"
+            ]
+        ]
+    },
+    {
+        "id": "cfcad839.1d69d8",
+        "type": "ui_dropdown",
+        "z": "d5a31cbe.4ba7e",
+        "name": "",
+        "label": " Region",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "c904f915.dff018",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "southwest",
+                "value": "southwest",
+                "type": "str"
+            },
+            {
+                "label": "southeast",
+                "value": "southeast",
+                "type": "str"
+            },
+            {
+                "label": "northwest",
+                "value": "northwest",
+                "type": "str"
+            },
+            {
+                "label": "northeast",
+                "value": "northeast",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "",
+        "x": 80,
+        "y": 320,
+        "wires": [
+            [
+                "363621ae.2bd44e"
+            ]
+        ]
+    },
+    {
+        "id": "ae0c0868.03e568",
+        "type": "function",
+        "z": "d5a31cbe.4ba7e",
+        "name": "global variables for form node",
+        "func": "global.set(\"age\",msg.payload.a)\nglobal.set(\"children\",msg.payload.a)\nglobal.set(\"BMI\",msg.payload.a)\nvar apikey= \"_RBR-B6V1z17YEvxnny5RloXmZ5dDWmGSVWtYtMj2tvV\"\nmsg.headers={\"content-type\":\"application/x-www-form-urlencoded\"}\nmsg.payload={\"grant_type\":\"urn:ibm:params:oauth:grant-type:apikey\",\"apikey\":apikey}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 310,
+        "y": 120,
+        "wires": [
+            [
+                "ed746ca6.148b3",
+                "abad1f6b.ac031"
+            ]
+        ]
+    },
+    {
+        "id": "c8a30def.5a2ab",
+        "type": "function",
+        "z": "d5a31cbe.4ba7e",
+        "name": "smoker",
+        "func": "global.set(\"smoker\",msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 300,
+        "y": 260,
+        "wires": [
+            [
+                "d39d628c.d6384",
+                "82ad0635.c17f48"
+            ]
+        ]
+    },
+    {
+        "id": "363621ae.2bd44e",
+        "type": "function",
+        "z": "d5a31cbe.4ba7e",
+        "name": "Region",
+        "func": "global.set(\"region\",msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 280,
+        "y": 320,
+        "wires": [
+            [
+                "629a5067.f19e7"
+            ]
+        ]
+    },
+    {
+        "id": "25d635b7.60f72a",
+        "type": "function",
+        "z": "d5a31cbe.4ba7e",
+        "name": "sex",
+        "func": "global.set(\"sex\",msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 290,
+        "y": 200,
+        "wires": [
+            [
+                "d39d628c.d6384"
+            ]
+        ]
+    },
+    {
+        "id": "ed746ca6.148b3",
+        "type": "debug",
+        "z": "d5a31cbe.4ba7e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "d39d628c.d6384",
+        "type": "debug",
+        "z": "d5a31cbe.4ba7e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "82ad0635.c17f48",
+        "type": "debug",
+        "z": "d5a31cbe.4ba7e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "629a5067.f19e7",
+        "type": "debug",
+        "z": "d5a31cbe.4ba7e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "abad1f6b.ac031",
+        "type": "http request",
+        "z": "d5a31cbe.4ba7e",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://iam.cloud.ibm.com/identity/token",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 610,
+        "y": 100,
+        "wires": [
+            [
+                "3cc9e9bb.ee4ce6",
+                "78e2338f.c1f7ec"
+            ]
+        ]
+    },
+    {
+        "id": "3cc9e9bb.ee4ce6",
+        "type": "debug",
+        "z": "d5a31cbe.4ba7e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "78e2338f.c1f7ec",
+        "type": "function",
+        "z": "d5a31cbe.4ba7e",
+        "name": "",
+        "func": "var age = global.get(\"age\")\nvar sex = global.get(\"sex\")\nvar bmi = global.get(\"bmi\")\nvar children = global.get(\"children\")\nvar smoker = global.get(\"smoker\")\nvar region = global.get(\"region\")\nvar token=msg.payload.access_token\nmsg.headers={'Content-Type': 'application/json',\"Authorization\":\"Bearer \"+token,\"Accept\":\"application/json\"}\nmsg.payload={\"input_data\":[{\"fields\":[\"age\",\"sex\",\"bmi\",\"children\",\"smoker\",\"region\"],\"values\":[[age,sex,bmi,children,smoker,region]]}]}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 850,
+        "y": 120,
+        "wires": [
+            [
+                "c83f37bd.ddfe48"
+            ]
+        ]
+    },
+    {
+        "id": "c83f37bd.ddfe48",
+        "type": "http request",
+        "z": "d5a31cbe.4ba7e",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://us-south.ml.cloud.ibm.com/ml/v4/deployments/62d266c1-56e5-4b9c-913d-b21db7f6c321/predictions?version=2020-12-24",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 990,
+        "y": 120,
+        "wires": [
+            [
+                "d8d0502b.e580c",
+                "ed43eb74.83e908"
+            ]
+        ]
+    },
+    {
+        "id": "d8d0502b.e580c",
+        "type": "debug",
+        "z": "d5a31cbe.4ba7e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "ed43eb74.83e908",
+        "type": "function",
+        "z": "d5a31cbe.4ba7e",
+        "name": "",
+        "func": "msg.payload= msg.payload.predictions[0].values[0][0]\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1200,
+        "y": 120,
+        "wires": [
+            [
+                "5826d8c0.59da18",
+                "ca7d0094.916ed"
+            ]
+        ]
+    },
+    {
+        "id": "5826d8c0.59da18",
+        "type": "debug",
+        "z": "d5a31cbe.4ba7e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1290,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "ca7d0094.916ed",
+        "type": "ui_text",
+        "z": "d5a31cbe.4ba7e",
+        "group": "c904f915.dff018",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "The premium will be ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1460,
+        "y": 120,
+        "wires": []
+    }
+]
